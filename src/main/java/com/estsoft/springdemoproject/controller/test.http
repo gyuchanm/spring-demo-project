@@ -1,0 +1,45 @@
+### GET Student Name
+GET http://localhost:8080/student/1
+Content-Type: application/json
+Authorization: Basic dXNlcjphOWVhNGI3OC1jYzdiLTQyZTQtODRmNC01NzhjM2U0MWVjN2E=
+
+
+### save Student
+POST http://localhost:8080/student?name=hani&age=20
+Content-Type: application/json
+Authorization: Basic dXNlcjphOWVhNGI3OC1jYzdiLTQyZTQtODRmNC01NzhjM2U0MWVjN2E=
+
+
+### save lectureCourse
+POST http://localhost:8080/lecture/course?title=spring-jpa&instructorId=1&capacity=30&from=2024-10-10&to=2024-10-11
+Content-Type: application/json
+Authorization: Basic dXNlcjphOWVhNGI3OC1jYzdiLTQyZTQtODRmNC01NzhjM2U0MWVjN2E=
+
+
+### get post list
+GET http://localhost:8080/post/list
+Content-Type: application/json
+Authorization: Basic dXNlcjphOWVhNGI3OC1jYzdiLTQyZTQtODRmNC01NzhjM2U0MWVjN2E=
+
+
+### save post
+POST http://localhost:8080/post
+Content-Type: application/json
+Authorization: Basic dXNlcjphOWVhNGI3OC1jYzdiLTQyZTQtODRmNC01NzhjM2U0MWVjN2E=
+
+{
+  "categoryId" : 1,
+  "userId" : 1,
+  "title" : "게시글테스트예요",
+  "content" : "게시글의 본문 내용을 입력하시면 됩니다. test \n 게시글의 본문 내용을 입력하시면 됩니다. test 게시글의 본문 내용을 입력하시면 됩니다. test"
+}
+
+### save comment
+POST http://localhost:8080/comment
+Content-Type: application/json
+Authorization: Basic dXNlcjphOWVhNGI3OC1jYzdiLTQyZTQtODRmNC01NzhjM2U0MWVjN2E=
+
+{
+  "postId" : 1,
+  "content" : "댓글6 hahaha"
+}
